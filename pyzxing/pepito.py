@@ -18,9 +18,6 @@ def procesar_codigo(imagen):
             valor_raw = valor_raw.split("@")
             llave_lista = ["N° de Tramite", "Apellido", "Nombre", "Sexo","N° Dni", "Tipo", "Fecha de Nacimiento", "Fecha de emisión"]
             objeto_raw = {llave:valor for llave, valor in zip(llave_lista, valor_raw[:8])}
-            print (objeto_raw)
-
-procesar_codigo("./micky.jpg")
-
-
+            return (objeto_raw)
+procesar_codigo()
 
